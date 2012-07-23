@@ -9,6 +9,7 @@
 #import "ALXMainMenu.h"
 #import "CCMenu.h"
 #import "ALXGameScene.h"
+#import "ALXAbout.h"
 
 @implementation ALXMainMenu
 
@@ -37,15 +38,15 @@
 	NSLog(@"Resume");
 }
 
-- (void) newGame: (CCMenuItem  *) menuItem 
-{
+- (void) newGame: (CCMenuItem  *) menuItem {
   ALXGameScene * scene = [ALXGameScene node];
   [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5f scene:scene]];
 	NSLog(@"New game");
 }
 
-- (void) about: (CCMenuItem  *) menuItem 
-{
+- (void) about: (CCMenuItem  *) menuItem {
+  ALXAbout * scene = [ALXAbout node];
+  [[CCDirector sharedDirector] pushScene:[CCTransitionFade transitionWithDuration:0.5f scene:scene]];
 	NSLog(@"About");
 }
 

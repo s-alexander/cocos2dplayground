@@ -8,6 +8,9 @@
 
 #import "CCScene.h"
 
-@interface ALXGameScene : CCScene
+@interface ALXGameScene : CCScene {
+  
+}
+
 
 @end

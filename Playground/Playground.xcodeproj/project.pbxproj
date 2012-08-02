@@ -130,6 +130,7 @@
 		FA51A61C15BD8697000E6E9C /* DataManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA51A61A15BD8697000E6E9C /* DataManager.mm */; };
 		FA51A61F15BD86E1000E6E9C /* NSArray+FirstObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A61E15BD86E0000E6E9C /* NSArray+FirstObject.m */; };
 		FA51A62115BD872B000E6E9C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA51A62015BD872B000E6E9C /* CoreData.framework */; };
+		FAE9B88B15CA69D5001C0B5A /* sprite_sample.png in Resources */ = {isa = PBXBuildFile; fileRef = FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -383,6 +384,7 @@
 		FA51A61D15BD86E0000E6E9C /* NSArray+FirstObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FirstObject.h"; sourceTree = "<group>"; };
 		FA51A61E15BD86E0000E6E9C /* NSArray+FirstObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FirstObject.m"; sourceTree = "<group>"; };
 		FA51A62015BD872B000E6E9C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_sample.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,6 +443,7 @@
 		FA51A4A915BD5F61000E6E9C /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */,
 				FA51A61D15BD86E0000E6E9C /* NSArray+FirstObject.h */,
 				FA51A61E15BD86E0000E6E9C /* NSArray+FirstObject.m */,
 				FA51A61915BD8697000E6E9C /* DataManager.h */,
@@ -857,6 +860,7 @@
 				FA51A4B815BD5F61000E6E9C /* Icon.png in Resources */,
 				FA51A4BA15BD5F61000E6E9C /* Icon@2x.png in Resources */,
 				FA51A4BD15BD5F61000E6E9C /* iTunesArtwork in Resources */,
+				FAE9B88B15CA69D5001C0B5A /* sprite_sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1065,6 +1069,7 @@
 				FA51A60C15BD5F64000E6E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

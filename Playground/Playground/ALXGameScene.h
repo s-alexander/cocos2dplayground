@@ -7,8 +7,9 @@
 //
 
 #import "CCScene.h"
+#import "ALXPhysicScene.h"
 
-@interface ALXGameScene : CCScene {
+@interface ALXGameScene : ALXPhysicScene {
   
 }
 

@@ -123,8 +123,8 @@
 		FA51A60015BD5F64000E6E9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A5FF15BD5F64000E6E9C /* AppDelegate.m */; };
 		FA51A60315BD5F64000E6E9C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A60215BD5F64000E6E9C /* RootViewController.m */; };
 		FA51A60615BD5F64000E6E9C /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A60515BD5F64000E6E9C /* HelloWorldLayer.m */; };
-		FA51A60F15BD5FF6000E6E9C /* ALXMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A60E15BD5FF6000E6E9C /* ALXMainMenu.m */; };
-		FA51A61215BD6F4F000E6E9C /* ALXGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A61115BD6F4E000E6E9C /* ALXGameScene.m */; };
+		FA51A60F15BD5FF6000E6E9C /* ALXMainMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA51A60E15BD5FF6000E6E9C /* ALXMainMenu.mm */; };
+		FA51A61215BD6F4F000E6E9C /* ALXGameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA51A61115BD6F4E000E6E9C /* ALXGameScene.mm */; };
 		FA51A61515BD7020000E6E9C /* ALXAbout.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A61415BD7020000E6E9C /* ALXAbout.m */; };
 		FA51A61815BD865B000E6E9C /* CommonData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA51A61615BD865B000E6E9C /* CommonData.xcdatamodeld */; };
 		FA51A61C15BD8697000E6E9C /* DataManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA51A61A15BD8697000E6E9C /* DataManager.mm */; };
@@ -408,9 +408,9 @@
 		FA51A60515BD5F64000E6E9C /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		FA51A60715BD5F64000E6E9C /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		FA51A60D15BD5FF6000E6E9C /* ALXMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXMainMenu.h; sourceTree = "<group>"; };
-		FA51A60E15BD5FF6000E6E9C /* ALXMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALXMainMenu.m; sourceTree = "<group>"; };
+		FA51A60E15BD5FF6000E6E9C /* ALXMainMenu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXMainMenu.mm; sourceTree = "<group>"; };
 		FA51A61015BD6F4E000E6E9C /* ALXGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXGameScene.h; sourceTree = "<group>"; };
-		FA51A61115BD6F4E000E6E9C /* ALXGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALXGameScene.m; sourceTree = "<group>"; };
+		FA51A61115BD6F4E000E6E9C /* ALXGameScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXGameScene.mm; sourceTree = "<group>"; };
 		FA51A61315BD7020000E6E9C /* ALXAbout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXAbout.h; sourceTree = "<group>"; };
 		FA51A61415BD7020000E6E9C /* ALXAbout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALXAbout.m; sourceTree = "<group>"; };
 		FA51A61715BD865B000E6E9C /* CommonData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CommonData.xcdatamodel; sourceTree = "<group>"; };
@@ -571,9 +571,9 @@
 				FA51A4BE15BD5F61000E6E9C /* libs */,
 				FA51A5FA15BD5F64000E6E9C /* Supporting Files */,
 				FA51A60D15BD5FF6000E6E9C /* ALXMainMenu.h */,
-				FA51A60E15BD5FF6000E6E9C /* ALXMainMenu.m */,
+				FA51A60E15BD5FF6000E6E9C /* ALXMainMenu.mm */,
 				FA51A61015BD6F4E000E6E9C /* ALXGameScene.h */,
-				FA51A61115BD6F4E000E6E9C /* ALXGameScene.m */,
+				FA51A61115BD6F4E000E6E9C /* ALXGameScene.mm */,
 				FA51A61315BD7020000E6E9C /* ALXAbout.h */,
 				FA51A61415BD7020000E6E9C /* ALXAbout.m */,
 				FA51A61615BD865B000E6E9C /* CommonData.xcdatamodeld */,
@@ -1218,8 +1218,8 @@
 				FA51A60015BD5F64000E6E9C /* AppDelegate.m in Sources */,
 				FA51A60315BD5F64000E6E9C /* RootViewController.m in Sources */,
 				FA51A60615BD5F64000E6E9C /* HelloWorldLayer.m in Sources */,
-				FA51A60F15BD5FF6000E6E9C /* ALXMainMenu.m in Sources */,
-				FA51A61215BD6F4F000E6E9C /* ALXGameScene.m in Sources */,
+				FA51A60F15BD5FF6000E6E9C /* ALXMainMenu.mm in Sources */,
+				FA51A61215BD6F4F000E6E9C /* ALXGameScene.mm in Sources */,
 				FA51A61515BD7020000E6E9C /* ALXAbout.m in Sources */,
 				FA51A61815BD865B000E6E9C /* CommonData.xcdatamodeld in Sources */,
 				FA51A61C15BD8697000E6E9C /* DataManager.mm in Sources */,

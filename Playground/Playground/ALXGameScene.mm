@@ -8,6 +8,7 @@
 
 #import "ALXGameScene.h"
 #import "cocos2d.h"
+#import <Box2D/Box2D.h>
 
 @implementation ALXGameScene
 -(id) init {
@@ -22,16 +23,26 @@
     
     //To add it to the scene:
     [self addChild: mySprite];
-    [mySprite runAction: [CCMoveTo actionWithDuration:1 position:CGPointZero]];
+//    [mySprite runAction: [CCMoveTo actionWithDuration:1 position:CGPointZero]];
     
+    _body->SetUserData(mySprite);
     [self schedule:@selector(nextFrame:)];
   }
   return self;
 }
 
 - (void) nextFrame:(ccTime)dt {
-  //CCNode * node = [self getChildByTag:13];
-  //[node setPosition:CGPointApplyAffineTransform([node position], CGAffineTransformMakeTranslation(1, 1))];
+//  CCNode * node = [self getChildByTag:13];
+//  [node setPosition:CGPointApplyAffineTransform([node position], CGAffineTransformMakeTranslation(1, 1))];
+  _world->Step(dt, 10, 10);
+  for(b2Body *b = _world->GetBodyList(); b; b=b->GetNext()) {
+    if (b->GetUserData() != NULL) {
+      CCSprite *ballData = (CCSprite *)b->GetUserData();
+      ballData.position = ccp(b->GetPosition().x * PTM_RATIO,
+                              b->GetPosition().y * PTM_RATIO);
+      ballData.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+    }
+  }
 }
 
 @end

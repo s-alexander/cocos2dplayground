@@ -8,6 +8,14 @@
 
 #import "CCScene.h"
 
-@interface ALXPhysicScene : CCScene
+#define PTM_RATIO 32.0
+
+class b2World;
+class b2Body;
+
+@interface ALXPhysicScene : CCScene {
+  b2World *_world;
+  b2Body *_body;
+}
 
 @end

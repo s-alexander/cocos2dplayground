@@ -167,6 +167,7 @@
 		FA9D333515D54B5A0037543F /* b2RevoluteJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA9D32E215D54B5A0037543F /* b2RevoluteJoint.cpp */; };
 		FA9D333615D54B5A0037543F /* b2WeldJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA9D32E415D54B5A0037543F /* b2WeldJoint.cpp */; };
 		FAE9B88B15CA69D5001C0B5A /* sprite_sample.png in Resources */ = {isa = PBXBuildFile; fileRef = FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */; };
+		FAFCEDE615DA4C860039B8F5 /* ALXObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAFCEDE515DA4C860039B8F5 /* ALXObject.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -495,6 +496,8 @@
 		FA9D32E415D54B5A0037543F /* b2WeldJoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2WeldJoint.cpp; sourceTree = "<group>"; };
 		FA9D32E515D54B5A0037543F /* b2WeldJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2WeldJoint.h; sourceTree = "<group>"; };
 		FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_sample.png; sourceTree = "<group>"; };
+		FAFCEDE415DA4C860039B8F5 /* ALXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXObject.h; sourceTree = "<group>"; };
+		FAFCEDE515DA4C860039B8F5 /* ALXObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXObject.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -579,6 +582,8 @@
 				FA51A61615BD865B000E6E9C /* CommonData.xcdatamodeld */,
 				FA9D329215D548740037543F /* ALXPhysicScene.h */,
 				FA9D329315D548740037543F /* ALXPhysicScene.mm */,
+				FAFCEDE415DA4C860039B8F5 /* ALXObject.h */,
+				FAFCEDE515DA4C860039B8F5 /* ALXObject.mm */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -1260,6 +1265,7 @@
 				FA9D333415D54B5A0037543F /* b2PulleyJoint.cpp in Sources */,
 				FA9D333515D54B5A0037543F /* b2RevoluteJoint.cpp in Sources */,
 				FA9D333615D54B5A0037543F /* b2WeldJoint.cpp in Sources */,
+				FAFCEDE615DA4C860039B8F5 /* ALXObject.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

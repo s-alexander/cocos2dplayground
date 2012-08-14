@@ -8,14 +8,15 @@
 
 #import "CCScene.h"
 
-#define PTM_RATIO 32.0
-
 class b2World;
 class b2Body;
 
+@class ALXObject;
+
 @interface ALXPhysicScene : CCScene {
   b2World *_world;
-  b2Body *_body;
 }
 
+-(void) addObject:(ALXObject *) o;
+-(void) removeObject:(ALXObject *) o;
 @end

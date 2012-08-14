@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 СУП Фабрик. All rights reserved.
 //
 
-#import "CCScene.h"
 #import "ALXPhysicScene.h"
 
 @interface ALXGameScene : ALXPhysicScene {

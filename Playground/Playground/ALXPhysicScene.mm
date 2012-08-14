@@ -8,7 +8,7 @@
 
 #import "ALXPhysicScene.h"
 #import <Box2D/Box2D.h>
-
+#import "ALXObject.h"
 
 
 @implementation ALXPhysicScene
@@ -37,22 +37,7 @@
                           winSize.height/PTM_RATIO), b2Vec2(winSize.width/PTM_RATIO, 0));
     groundBody->CreateFixture(&boxShapeDef);*/
     
-    // Create ball body and shape
-    b2BodyDef ballBodyDef;
-    ballBodyDef.type = b2_dynamicBody;
-    ballBodyDef.position.Set(100/PTM_RATIO, 100/PTM_RATIO);
-//    ballBodyDef.userData = _ball;
-    _body = _world->CreateBody(&ballBodyDef);
-    
-    b2CircleShape circle;
-    circle.m_radius = 26.0/PTM_RATIO;
-    
-    b2FixtureDef ballShapeDef;
-    ballShapeDef.shape = &circle;
-    ballShapeDef.density = 1.0f;
-    ballShapeDef.friction = 0.2f;
-    ballShapeDef.restitution = 0.8f;
-    _body->CreateFixture(&ballShapeDef);
+
   }
   return self;
 }
@@ -62,5 +47,16 @@
   delete _world;
   [super dealloc];
 }
+
+-(void) addObject:(ALXObject *) o {
+  b2Body * body = _world->CreateBody(&[o bodyDef]);
+  [o setBody:body];
+  [self addChild:[o gra]];
+}
+
+-(void) removeObject:(ALXObject *) o {
+  
+}
+
 
 @end

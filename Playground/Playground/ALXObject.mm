@@ -15,6 +15,7 @@
 @implementation ALXObject
 @synthesize gra;
 @dynamic body;
+@dynamic position;
 
 -(id) init {
   self = [super init];
@@ -27,6 +28,14 @@
     [self setGra:mySprite];
   }
   return self;
+}
+
+-(CGPoint) position {
+  return gra.position;
+}
+
+-(void) setPosition:(CGPoint)position {
+  [[self gra] setPosition:position];
 }
 
 -(b2Body *) body {
@@ -57,7 +66,8 @@
 -(b2BodyDef) bodyDef {
   b2BodyDef ballBodyDef;
   ballBodyDef.type = b2_dynamicBody;
-  ballBodyDef.position.Set(100/PTM_RATIO, 100/PTM_RATIO);
+  const CGPoint p = [self position];
+  ballBodyDef.position.Set(p.x, p.y);
   return ballBodyDef;
 }
 

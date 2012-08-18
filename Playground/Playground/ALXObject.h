@@ -16,7 +16,7 @@ class b2BodyDef;
   b2Body * _body;
 }
 
-
+@property (nonatomic, assign) CGPoint position;
 @property (nonatomic, retain) CCNode * gra;
 -(b2BodyDef) bodyDef;
 

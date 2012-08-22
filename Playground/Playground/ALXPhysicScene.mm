@@ -17,6 +17,7 @@
 -(id) init {
   self = [super init];
   if (self) {
+    _objects = [[NSMutableSet alloc]init];
     // Create a world
     b2Vec2 gravity = b2Vec2(0.0f, -30.0f);
     _world = new b2World(gravity);
@@ -46,14 +47,27 @@
 
 -(void) dealloc {
 //  delete _body;
+  for (ALXObject * o in _objects) {
+    [self removeObject:0];
+  }
+  [_objects release];
   delete _world;
   [super dealloc];
 }
 
 -(void) addObject:(ALXObject *) o {
-  b2Body * body = _world->CreateBody(&[o bodyDef]);
+  b2BodyDef bodyDef;
+  bodyDef.type = [o bodyType];
+  const CGPoint p = [o position];
+  bodyDef.position.Set(p.x, p.y);
+
+  b2Body * body = _world->CreateBody(&bodyDef);
   [o setBody:body];
-  [self addChild:[o gra]];
+  CCNode * node = [o gra];
+  if (node) {
+    [self addChild:[o gra]];
+  }
+  [_objects addObject:o];
 }
 
 -(void) removeObject:(ALXObject *) o {
@@ -68,10 +82,11 @@
     if (b->GetUserData() != NULL) {
       ALXObject * o = (ALXObject *)b->GetUserData();
       
-      CCNode *ballData = [o gra];
-      ballData.position = ccp(b->GetPosition().x * PTM_RATIO,
-                              b->GetPosition().y * PTM_RATIO);
-      ballData.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+      if (CCNode *ballData = [o gra]) {
+        ballData.position = ccp(b->GetPosition().x * PTM_RATIO,
+                                b->GetPosition().y * PTM_RATIO);
+        ballData.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+      }
     }
   }
 }

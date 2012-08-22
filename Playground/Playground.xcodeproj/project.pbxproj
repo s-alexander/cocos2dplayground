@@ -176,6 +176,12 @@
 		FA51A61F15BD86E1000E6E9C /* NSArray+FirstObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A61E15BD86E0000E6E9C /* NSArray+FirstObject.m */; };
 		FA51A62115BD872B000E6E9C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA51A62015BD872B000E6E9C /* CoreData.framework */; };
 		FA9D329415D548740037543F /* ALXPhysicScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA9D329315D548740037543F /* ALXPhysicScene.mm */; };
+		FADA43BB15E4DD9A0074E844 /* TestObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = FADA43BA15E4DD9A0074E844 /* TestObject.mm */; };
+		FADA43C015E4E4B10074E844 /* ALXDynamicObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = FADA43BF15E4E4B10074E844 /* ALXDynamicObject.mm */; };
+		FADA43C315E4E4C70074E844 /* ALXStaticObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = FADA43C215E4E4C70074E844 /* ALXStaticObject.mm */; };
+		FADA43C615E4E4E30074E844 /* ALXKintematicObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = FADA43C515E4E4E30074E844 /* ALXKintematicObject.mm */; };
+		FADA43C915E4FC5B0074E844 /* LevelGround.mm in Sources */ = {isa = PBXBuildFile; fileRef = FADA43C815E4FC5B0074E844 /* LevelGround.mm */; };
+		FADA43CC15E50AA90074E844 /* PolygoneNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = FADA43CB15E50AA80074E844 /* PolygoneNode.mm */; };
 		FAE9B88B15CA69D5001C0B5A /* sprite_sample.png in Resources */ = {isa = PBXBuildFile; fileRef = FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */; };
 		FAFCEDE615DA4C860039B8F5 /* ALXObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAFCEDE515DA4C860039B8F5 /* ALXObject.mm */; };
 /* End PBXBuildFile section */
@@ -524,6 +530,18 @@
 		FA51A62015BD872B000E6E9C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FA9D329215D548740037543F /* ALXPhysicScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXPhysicScene.h; sourceTree = "<group>"; };
 		FA9D329315D548740037543F /* ALXPhysicScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXPhysicScene.mm; sourceTree = "<group>"; };
+		FADA43B915E4DD9A0074E844 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		FADA43BA15E4DD9A0074E844 /* TestObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestObject.mm; sourceTree = "<group>"; };
+		FADA43BE15E4E4B10074E844 /* ALXDynamicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXDynamicObject.h; sourceTree = "<group>"; };
+		FADA43BF15E4E4B10074E844 /* ALXDynamicObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXDynamicObject.mm; sourceTree = "<group>"; };
+		FADA43C115E4E4C70074E844 /* ALXStaticObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXStaticObject.h; sourceTree = "<group>"; };
+		FADA43C215E4E4C70074E844 /* ALXStaticObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXStaticObject.mm; sourceTree = "<group>"; };
+		FADA43C415E4E4E30074E844 /* ALXKintematicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXKintematicObject.h; sourceTree = "<group>"; };
+		FADA43C515E4E4E30074E844 /* ALXKintematicObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXKintematicObject.mm; sourceTree = "<group>"; };
+		FADA43C715E4FC5B0074E844 /* LevelGround.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelGround.h; sourceTree = "<group>"; };
+		FADA43C815E4FC5B0074E844 /* LevelGround.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelGround.mm; sourceTree = "<group>"; };
+		FADA43CA15E50AA70074E844 /* PolygoneNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygoneNode.h; sourceTree = "<group>"; };
+		FADA43CB15E50AA80074E844 /* PolygoneNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PolygoneNode.mm; sourceTree = "<group>"; };
 		FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_sample.png; sourceTree = "<group>"; };
 		FAFCEDE415DA4C860039B8F5 /* ALXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXObject.h; sourceTree = "<group>"; };
 		FAFCEDE515DA4C860039B8F5 /* ALXObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXObject.mm; sourceTree = "<group>"; };
@@ -765,8 +783,9 @@
 				FA51A61615BD865B000E6E9C /* CommonData.xcdatamodeld */,
 				FA9D329215D548740037543F /* ALXPhysicScene.h */,
 				FA9D329315D548740037543F /* ALXPhysicScene.mm */,
-				FAFCEDE415DA4C860039B8F5 /* ALXObject.h */,
-				FAFCEDE515DA4C860039B8F5 /* ALXObject.mm */,
+				FADA43BD15E4E4950074E844 /* Objects */,
+				FADA43CA15E50AA70074E844 /* PolygoneNode.h */,
+				FADA43CB15E50AA80074E844 /* PolygoneNode.mm */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -1109,6 +1128,25 @@
 			path = External;
 			sourceTree = SOURCE_ROOT;
 		};
+		FADA43BD15E4E4950074E844 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCEDE415DA4C860039B8F5 /* ALXObject.h */,
+				FAFCEDE515DA4C860039B8F5 /* ALXObject.mm */,
+				FADA43BE15E4E4B10074E844 /* ALXDynamicObject.h */,
+				FADA43BF15E4E4B10074E844 /* ALXDynamicObject.mm */,
+				FADA43C115E4E4C70074E844 /* ALXStaticObject.h */,
+				FADA43C215E4E4C70074E844 /* ALXStaticObject.mm */,
+				FADA43C415E4E4E30074E844 /* ALXKintematicObject.h */,
+				FADA43C515E4E4E30074E844 /* ALXKintematicObject.mm */,
+				FADA43B915E4DD9A0074E844 /* TestObject.h */,
+				FADA43BA15E4DD9A0074E844 /* TestObject.mm */,
+				FADA43C715E4FC5B0074E844 /* LevelGround.h */,
+				FADA43C815E4FC5B0074E844 /* LevelGround.mm */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1332,6 +1370,12 @@
 				FA11E61615DFA0BF00744D23 /* b2WeldJoint.cpp in Sources */,
 				FA11E61715DFA0BF00744D23 /* b2WheelJoint.cpp in Sources */,
 				FA11E61815DFA0BF00744D23 /* b2Rope.cpp in Sources */,
+				FADA43BB15E4DD9A0074E844 /* TestObject.mm in Sources */,
+				FADA43C015E4E4B10074E844 /* ALXDynamicObject.mm in Sources */,
+				FADA43C315E4E4C70074E844 /* ALXStaticObject.mm in Sources */,
+				FADA43C615E4E4E30074E844 /* ALXKintematicObject.mm in Sources */,
+				FADA43C915E4FC5B0074E844 /* LevelGround.mm in Sources */,
+				FADA43CC15E50AA90074E844 /* PolygoneNode.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

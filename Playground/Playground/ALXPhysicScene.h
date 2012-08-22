@@ -15,6 +15,7 @@ class b2Body;
 
 @interface ALXPhysicScene : CCScene {
   b2World *_world;
+  NSMutableSet * _objects;
 }
 
 -(void) addObject:(ALXObject *) o;

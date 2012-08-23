@@ -9,7 +9,7 @@
 #import "CCNode.h"
 #import <vector>
 
-typedef std::vector<GLfloat> Verticles;
+typedef std::vector<GLfloat> Vertexes;
 
 class Color {
 private:
@@ -38,13 +38,13 @@ private:
 };
 
 @interface PolygoneNode : CCNode {
-  Verticles _verticles;
+  Vertexes _vertexes;
   Color _color;
 }
 
 -(void) setColor:(const Color &) c;
 
--(const Verticles &) verticles;
--(void) setVerticles:(const Verticles &) vert;
+-(const Vertexes &) vertexes;
+-(void) setVertexes:(const Vertexes &) vert;
 
 @end

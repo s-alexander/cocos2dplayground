@@ -33,7 +33,7 @@
       [self addObject:o];
     }
     
-//    Verticles v;
+//    Vertexes v;
     for (NSDictionary * s in [[level objectForKey:@"static"] objectForKey:@"vertexes"]) {
       LevelGround * lg = [[[LevelGround alloc]initWithDictionary:s]autorelease];
       [self addObject:lg];

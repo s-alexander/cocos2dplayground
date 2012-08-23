@@ -18,8 +18,8 @@
   glEnableClientState(GL_VERTEX_ARRAY);
   
   glColor4f(_color.red(), _color.green(), _color.blue(), _color.alpha());
-  glVertexPointer(2, GL_FLOAT, 0, _verticles.data());
-  glDrawArrays(GL_TRIANGLE_FAN, 0, _verticles.size());
+  glVertexPointer(2, GL_FLOAT, 0, _vertexes.data());
+  glDrawArrays(GL_TRIANGLE_FAN, 0, _vertexes.size());
 
   glDisableClientState(GL_VERTEX_ARRAY);
   glEnableClientState(GL_COLOR_ARRAY);
@@ -32,12 +32,12 @@
   _color = c;
 }
 
--(void) setVerticles:(const Verticles &) vert {
-  _verticles = vert;
+-(void) setVertexes:(const Vertexes &) vert {
+  _vertexes = vert;
 }
 
--(const Verticles &) verticles {
-  return _verticles;
+-(const Vertexes &) vertexes {
+  return _vertexes;
 }
 
 @end

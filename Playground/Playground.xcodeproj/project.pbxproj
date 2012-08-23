@@ -541,13 +541,13 @@
 		FADA43C415E4E4E30074E844 /* ALXKintematicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXKintematicObject.h; sourceTree = "<group>"; };
 		FADA43C515E4E4E30074E844 /* ALXKintematicObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXKintematicObject.mm; sourceTree = "<group>"; };
 		FADA43C715E4FC5B0074E844 /* LevelGround.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelGround.h; sourceTree = "<group>"; };
-		FADA43C815E4FC5B0074E844 /* LevelGround.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelGround.mm; sourceTree = "<group>"; };
+		FADA43C815E4FC5B0074E844 /* LevelGround.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = LevelGround.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		FADA43CA15E50AA70074E844 /* PolygoneNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygoneNode.h; sourceTree = "<group>"; };
 		FADA43CB15E50AA80074E844 /* PolygoneNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PolygoneNode.mm; sourceTree = "<group>"; };
 		FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sprite_sample.png; path = Playground/sprite_sample.png; sourceTree = "<group>"; };
 		FAFC500815E6380D0043DC5A /* level1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = level1.json; path = Levels/level1.json; sourceTree = "<group>"; };
 		FAFC500A15E638D70043DC5A /* ALXLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXLevelScene.h; sourceTree = "<group>"; };
-		FAFC500B15E638D70043DC5A /* ALXLevelScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXLevelScene.mm; sourceTree = "<group>"; };
+		FAFC500B15E638D70043DC5A /* ALXLevelScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = ALXLevelScene.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		FAFCEDE415DA4C860039B8F5 /* ALXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXObject.h; sourceTree = "<group>"; };
 		FAFCEDE515DA4C860039B8F5 /* ALXObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXObject.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */

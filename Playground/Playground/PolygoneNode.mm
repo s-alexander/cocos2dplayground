@@ -15,14 +15,21 @@
   glDisable(GL_TEXTURE_2D);
   glDisableClientState(GL_TEXTURE_COORD_ARRAY);
   glDisableClientState(GL_COLOR_ARRAY);
+  glEnableClientState(GL_VERTEX_ARRAY);
   
-  glVertexPointer(_verticles.size(), GL_FLOAT, 0, _verticles.data());
+  glColor4f(_color.red(), _color.green(), _color.blue(), _color.alpha());
+  glVertexPointer(2, GL_FLOAT, 0, _verticles.data());
   glDrawArrays(GL_TRIANGLE_FAN, 0, _verticles.size());
-  
+
+  glDisableClientState(GL_VERTEX_ARRAY);
   glEnableClientState(GL_COLOR_ARRAY);
   glEnableClientState(GL_TEXTURE_COORD_ARRAY);
   glEnable(GL_TEXTURE_2D);
 
+}
+
+-(void) setColor:(const Color &) c {
+  _color = c;
 }
 
 -(void) setVerticles:(const Verticles &) vert {

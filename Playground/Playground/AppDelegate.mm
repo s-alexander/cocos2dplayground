@@ -13,6 +13,7 @@
 #import "HelloWorldLayer.h"
 #import "RootViewController.h"
 #import "ALXMainMenu.h"
+#import "ALXLevelScene.h"
 
 @implementation AppDelegate
 
@@ -113,8 +114,9 @@
 	// Run the intro Scene
   //CCScene * scene = [HelloWorldLayer scene];
   
-  CCScene * mainMenu = [ALXMainMenu node];
-//  [scene addChild:mainMenu];
+//  CCScene * mainMenu = [ALXMainMenu node];
+  CCScene * mainMenu = [ALXLevelScene node];
+  
 	[[CCDirector sharedDirector] runWithScene:mainMenu];
 }
 

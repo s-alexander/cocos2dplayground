@@ -11,9 +11,38 @@
 
 typedef std::vector<GLfloat> Verticles;
 
+class Color {
+private:
+  GLfloat colorFromString(NSNumber * f) {
+    return [f floatValue];
+  }
+public:
+  Color() {;;}
+  Color(NSDictionary * d) {
+    _color[0] = colorFromString([d objectForKey:@"r"]);
+    _color[1] = colorFromString([d objectForKey:@"g"]);
+    _color[2] = colorFromString([d objectForKey:@"b"]);
+    _color[3] = colorFromString([d objectForKey:@"a"]);
+  }
+  Color(GLfloat r, GLfloat g, GLfloat b, GLfloat a) {
+     _color[0] = r; _color[1] = g; _color[2] = b; _color[3] = a;
+    ;;
+  }
+  ~Color() throw() { ;; }
+  GLfloat red() const { return _color[0]; }
+  GLfloat green() const { return _color[1]; }
+  GLfloat blue() const { return _color[2]; }
+  GLfloat alpha() const { return _color[3]; }
+private:
+  GLfloat _color[4];
+};
+
 @interface PolygoneNode : CCNode {
   Verticles _verticles;
+  Color _color;
 }
+
+-(void) setColor:(const Color &) c;
 
 -(const Verticles &) verticles;
 -(void) setVerticles:(const Verticles &) vert;

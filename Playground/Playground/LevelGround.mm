@@ -9,34 +9,71 @@
 #import "LevelGround.h"
 #import "cocos2d.h"
 #import "PolygoneNode.h"
+#include "ALXPhysicScene.h"
 
 @implementation LevelGround
+
+-(id) initWithDictionary:(NSDictionary *) dict {
+  self = [super init];
+  if (self) {
+    PolygoneNode * node = [[[PolygoneNode alloc]init]autorelease];
+    
+    [node setColor:Color([dict objectForKey:@"color"])];
+    
+    Verticles v;
+    for (NSNumber * n in [dict objectForKey:@"points"]) {
+//      const float f = atof([s cStringUsingEncoding:NSUTF8StringEncoding]);
+      const float f = [n floatValue];
+      v.push_back(f);
+    }
+    
+    const int vertexCount = v.size()/2;
+    b2Vec2 * b2vec = new b2Vec2[vertexCount];
+    
+    for (int i = 0; i < vertexCount; ++i) {
+      const CGFloat x = v[i*2];
+      const CGFloat y = v[i*2+1];
+      const CGPoint p = gra2phys(x, y);
+      b2vec[i].Set(p.x, p.y);
+    }
+    _shape = new b2PolygonShape();
+    _shape->Set(b2vec, vertexCount);
+    delete [] b2vec;
+    
+    [node setVerticles:v];
+    [self setGra:node];
+  }
+  return self;
+}
 
 -(id) init {
   self = [super init];
   if (self) {
     _shape = new b2PolygonShape();
-    b2Vec2 vertices[3];
-    
-    vertices[0].Set(5.0f, 5.0f);
-    vertices[1].Set(6.0f, 5.0f);
-    vertices[2].Set(5.0f, 6.0f);
-    
-    int32 count = 3;
-    
-    _shape->Set(vertices, count);
 
     PolygoneNode * node = [[[PolygoneNode alloc]init]autorelease];
-    std::vector<GLfloat> verticles;
+    Verticles verticles;
     verticles.push_back(0.0);
     verticles.push_back(0.0);
     
+    verticles.push_back(200.0);
     verticles.push_back(0.0);
-    verticles.push_back(1.0);
     
-    verticles.push_back(0.5);
-    verticles.push_back(1.0);
-
+    verticles.push_back(100.0);
+    verticles.push_back(100.0);
+    
+    const int vertexCount = verticles.size()/2;
+    b2Vec2 * b2vec = new b2Vec2[vertexCount];
+    
+    for (int i = 0; i < vertexCount; ++i) {
+      const CGFloat x = verticles[i*2];
+      const CGFloat y = verticles[i*2+1];
+      const CGPoint p = gra2phys(x, y);
+      b2vec[i].Set(p.x, p.y);
+    }
+    _shape->Set(b2vec, vertexCount);
+    delete [] b2vec;
+    
     [node setVerticles:verticles];
     [self setGra:node];
 

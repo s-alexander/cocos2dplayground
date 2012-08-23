@@ -165,7 +165,7 @@
 		FA51A5F415BD5F64000E6E9C /* ZAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A5F315BD5F64000E6E9C /* ZAttributedString.m */; };
 		FA51A5F815BD5F64000E6E9C /* ZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A5F715BD5F64000E6E9C /* ZFont.m */; };
 		FA51A5FD15BD5F64000E6E9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A5FC15BD5F64000E6E9C /* main.m */; };
-		FA51A60015BD5F64000E6E9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A5FF15BD5F64000E6E9C /* AppDelegate.m */; };
+		FA51A60015BD5F64000E6E9C /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA51A5FF15BD5F64000E6E9C /* AppDelegate.mm */; };
 		FA51A60315BD5F64000E6E9C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A60215BD5F64000E6E9C /* RootViewController.m */; };
 		FA51A60615BD5F64000E6E9C /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A60515BD5F64000E6E9C /* HelloWorldLayer.m */; };
 		FA51A60F15BD5FF6000E6E9C /* ALXMainMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA51A60E15BD5FF6000E6E9C /* ALXMainMenu.mm */; };
@@ -183,6 +183,8 @@
 		FADA43C915E4FC5B0074E844 /* LevelGround.mm in Sources */ = {isa = PBXBuildFile; fileRef = FADA43C815E4FC5B0074E844 /* LevelGround.mm */; };
 		FADA43CC15E50AA90074E844 /* PolygoneNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = FADA43CB15E50AA80074E844 /* PolygoneNode.mm */; };
 		FAE9B88B15CA69D5001C0B5A /* sprite_sample.png in Resources */ = {isa = PBXBuildFile; fileRef = FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */; };
+		FAFC500915E6380D0043DC5A /* level1.json in Resources */ = {isa = PBXBuildFile; fileRef = FAFC500815E6380D0043DC5A /* level1.json */; };
+		FAFC500C15E638D70043DC5A /* ALXLevelScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAFC500B15E638D70043DC5A /* ALXLevelScene.mm */; };
 		FAFCEDE615DA4C860039B8F5 /* ALXObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAFCEDE515DA4C860039B8F5 /* ALXObject.mm */; };
 /* End PBXBuildFile section */
 
@@ -509,7 +511,7 @@
 		FA51A5FB15BD5F64000E6E9C /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		FA51A5FC15BD5F64000E6E9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA51A5FE15BD5F64000E6E9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FA51A5FF15BD5F64000E6E9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA51A5FF15BD5F64000E6E9C /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		FA51A60115BD5F64000E6E9C /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		FA51A60215BD5F64000E6E9C /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		FA51A60415BD5F64000E6E9C /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
@@ -542,7 +544,10 @@
 		FADA43C815E4FC5B0074E844 /* LevelGround.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelGround.mm; sourceTree = "<group>"; };
 		FADA43CA15E50AA70074E844 /* PolygoneNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygoneNode.h; sourceTree = "<group>"; };
 		FADA43CB15E50AA80074E844 /* PolygoneNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PolygoneNode.mm; sourceTree = "<group>"; };
-		FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_sample.png; sourceTree = "<group>"; };
+		FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sprite_sample.png; path = Playground/sprite_sample.png; sourceTree = "<group>"; };
+		FAFC500815E6380D0043DC5A /* level1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = level1.json; path = Levels/level1.json; sourceTree = "<group>"; };
+		FAFC500A15E638D70043DC5A /* ALXLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXLevelScene.h; sourceTree = "<group>"; };
+		FAFC500B15E638D70043DC5A /* ALXLevelScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXLevelScene.mm; sourceTree = "<group>"; };
 		FAFCEDE415DA4C860039B8F5 /* ALXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXObject.h; sourceTree = "<group>"; };
 		FAFCEDE515DA4C860039B8F5 /* ALXObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXObject.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -724,7 +729,8 @@
 		FA51A48A15BD5F61000E6E9C = {
 			isa = PBXGroup;
 			children = (
-				FA51A4A915BD5F61000E6E9C /* Playground */,
+				FAFC500515E636150043DC5A /* Resources */,
+				FA51A4A915BD5F61000E6E9C /* Code */,
 				FA51A49815BD5F61000E6E9C /* Frameworks */,
 				FA51A49615BD5F61000E6E9C /* Products */,
 			);
@@ -754,18 +760,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FA51A4A915BD5F61000E6E9C /* Playground */ = {
+		FA51A4A915BD5F61000E6E9C /* Code */ = {
 			isa = PBXGroup;
 			children = (
 				FA9D329615D54B5A0037543F /* External */,
-				FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */,
 				FA51A61D15BD86E0000E6E9C /* NSArray+FirstObject.h */,
 				FA51A61E15BD86E0000E6E9C /* NSArray+FirstObject.m */,
 				FA51A61915BD8697000E6E9C /* DataManager.h */,
 				FA51A61A15BD8697000E6E9C /* DataManager.mm */,
 				FA51A61B15BD8697000E6E9C /* safe_cast.h */,
 				FA51A5FE15BD5F64000E6E9C /* AppDelegate.h */,
-				FA51A5FF15BD5F64000E6E9C /* AppDelegate.m */,
+				FA51A5FF15BD5F64000E6E9C /* AppDelegate.mm */,
 				FA51A60115BD5F64000E6E9C /* RootViewController.h */,
 				FA51A60215BD5F64000E6E9C /* RootViewController.m */,
 				FA51A60415BD5F64000E6E9C /* HelloWorldLayer.h */,
@@ -786,7 +791,10 @@
 				FADA43BD15E4E4950074E844 /* Objects */,
 				FADA43CA15E50AA70074E844 /* PolygoneNode.h */,
 				FADA43CB15E50AA80074E844 /* PolygoneNode.mm */,
+				FAFC500A15E638D70043DC5A /* ALXLevelScene.h */,
+				FAFC500B15E638D70043DC5A /* ALXLevelScene.mm */,
 			);
+			name = Code;
 			path = Playground;
 			sourceTree = "<group>";
 		};
@@ -1147,6 +1155,31 @@
 			name = Objects;
 			sourceTree = "<group>";
 		};
+		FAFC500515E636150043DC5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAFC500715E636320043DC5A /* Levels */,
+				FAFC500615E6362D0043DC5A /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FAFC500615E6362D0043DC5A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FAFC500715E636320043DC5A /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				FAFC500815E6380D0043DC5A /* level1.json */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1208,6 +1241,7 @@
 				FA51A4BA15BD5F61000E6E9C /* Icon@2x.png in Resources */,
 				FA51A4BD15BD5F61000E6E9C /* iTunesArtwork in Resources */,
 				FAE9B88B15CA69D5001C0B5A /* sprite_sample.png in Resources */,
+				FAFC500915E6380D0043DC5A /* level1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1314,7 +1348,7 @@
 				FA51A5F415BD5F64000E6E9C /* ZAttributedString.m in Sources */,
 				FA51A5F815BD5F64000E6E9C /* ZFont.m in Sources */,
 				FA51A5FD15BD5F64000E6E9C /* main.m in Sources */,
-				FA51A60015BD5F64000E6E9C /* AppDelegate.m in Sources */,
+				FA51A60015BD5F64000E6E9C /* AppDelegate.mm in Sources */,
 				FA51A60315BD5F64000E6E9C /* RootViewController.m in Sources */,
 				FA51A60615BD5F64000E6E9C /* HelloWorldLayer.m in Sources */,
 				FA51A60F15BD5FF6000E6E9C /* ALXMainMenu.mm in Sources */,
@@ -1376,6 +1410,7 @@
 				FADA43C615E4E4E30074E844 /* ALXKintematicObject.mm in Sources */,
 				FADA43C915E4FC5B0074E844 /* LevelGround.mm in Sources */,
 				FADA43CC15E50AA90074E844 /* PolygoneNode.mm in Sources */,
+				FAFC500C15E638D70043DC5A /* ALXLevelScene.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

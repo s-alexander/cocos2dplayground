@@ -23,7 +23,6 @@
       [self addObject:o];
     }
     
-    
     LevelGround * lg = [[[LevelGround alloc]init]autorelease];
     [lg setPosition:CGPointMake(5,0)];
     [self addObject:lg];

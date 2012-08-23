@@ -1,0 +1,15 @@
+{
+  "title": "Level 1",
+  "author": "Alexander Sergeev",
+  
+  "static": {
+    "vertexes": [
+                 {
+                 "points": ["0.0", 0.0,
+                          "200.0", "0.0",
+                          "100.0", "100.0"],
+                 "color": {"r":"0.0", "g":"0.0", "b":"1.0", "a":"1.0"}
+                 }
+      ]
+    }
+}

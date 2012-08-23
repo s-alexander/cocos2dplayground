@@ -12,4 +12,6 @@
   b2PolygonShape * _shape;
 }
 
+-(id) initWithDictionary:(NSDictionary *) dict;
+
 @end

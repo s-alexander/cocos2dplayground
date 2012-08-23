@@ -20,4 +20,14 @@ class b2Body;
 
 -(void) addObject:(ALXObject *) o;
 -(void) removeObject:(ALXObject *) o;
+
 @end
+
+inline CGPoint gra2phys(CGFloat x, CGFloat y) {
+  return CGPointMake(x/32.0f, y/32.0f);
+}
+
+inline CGPoint gra2phys(CGPoint p) {
+  return gra2phys(p.x, p.y);
+}
+

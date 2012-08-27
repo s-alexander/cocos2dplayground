@@ -19,7 +19,7 @@
   
   glColor4f(_color.red(), _color.green(), _color.blue(), _color.alpha());
   glVertexPointer(2, GL_FLOAT, 0, _vertexes.data());
-  glDrawArrays(GL_TRIANGLE_FAN, 0, _vertexes.size());
+  glDrawArrays(GL_TRIANGLES, 0, _vertexes.size());
 
   glDisableClientState(GL_VERTEX_ARRAY);
   glEnableClientState(GL_COLOR_ARRAY);

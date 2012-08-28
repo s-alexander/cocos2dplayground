@@ -18,11 +18,15 @@ class b2Shape;
   b2Body * _body;
 }
 
+-(id) initWithProperties:(NSDictionary *) p;
+
 @property (nonatomic, assign) CGPoint position;
 @property (nonatomic, retain) CCNode * gra;
+@property (nonatomic, retain) NSDictionary * properties;
 
 -(b2BodyType) bodyType;
 -(void) setupFixture:(b2FixtureDef *) fixture;
+-(void) setupBodyDef:(b2BodyDef *) bodyDef;
 -(b2Shape *) shape;
 
 @property (nonatomic, assign) b2Body * body;

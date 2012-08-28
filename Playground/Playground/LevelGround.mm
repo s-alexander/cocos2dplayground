@@ -13,18 +13,16 @@
 
 @implementation LevelGround
 
--(id) initWithDictionary:(NSDictionary *) dict {
+-(id) initWithProperties:(NSDictionary *) dict {
   self = [super init];
   if (self) {
     PolygoneNode * node = [[[PolygoneNode alloc]init]autorelease];
     
     [node setColor:Color([dict objectForKey:@"color"])];
-    NSLog(@"Starting new level ground polygone");
     Vertexes v;
     for (NSNumber * n in [dict objectForKey:@"points"]) {
       const float f = [n floatValue];
       v.push_back(f);
-      NSLog(@"got point %f",f);
     }
     
     const int vertexCount = v.size()/2;

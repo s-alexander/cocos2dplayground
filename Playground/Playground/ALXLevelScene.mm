@@ -25,20 +25,20 @@
     } else {
       NSLog(@"Error: %@", [error localizedDescription]);
     }
-                             
-    for (int i = 0; i < 10; ++i) {
-      TestObject * o = [[[TestObject alloc]init]autorelease];
-      [o setPosition:CGPointMake((5+rand()%10), 5+(rand()%10))];
-      //      [o setPosition:CGPointMake(10, 10)];
+
+    for (NSDictionary * s in [level objectForKey:@"objects"]) {
+      Class c = NSClassFromString([s objectForKey:@"class"]);
+      ALXObject * o = [[[c alloc] initWithProperties:[s objectForKey:@"properties"]]autorelease];
+//        ALXObject * o = [[[c alloc] init]autorelease];
+//      [o setPosition:CGPointMake(5,5)];
       [self addObject:o];
     }
     
-//    Vertexes v;
     for (NSDictionary * s in [[level objectForKey:@"static"] objectForKey:@"vertexes"]) {
-      LevelGround * lg = [[[LevelGround alloc]initWithDictionary:s]autorelease];
+      LevelGround * lg = [[[LevelGround alloc]initWithProperties:s]autorelease];
       [self addObject:lg];
-
     }
+  
   }
   return self;
 }

@@ -16,12 +16,12 @@
   self = [super init];
   if (self) {
 //    ALXObject * o = [[[ALXObject alloc]init]autorelease];
-    for (int i = 0; i < 10; ++i) {
+    /*for (int i = 0; i < 10; ++i) {
       TestObject * o = [[[TestObject alloc]init]autorelease];
       [o setPosition:CGPointMake((5+rand()%10), 5+(rand()%10))];
 //      [o setPosition:CGPointMake(10, 10)];
       [self addObject:o];
-    }
+    }*/
     
     /*LevelGround * lg = [[[LevelGround alloc]init]autorelease];
     [lg setPosition:CGPointMake(5,0)];

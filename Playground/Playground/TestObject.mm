@@ -18,7 +18,16 @@
     CCSprite *mySprite = [CCSprite spriteWithFile:@"sprite_sample.png"]; //make sure you have imported the image file to your resources folder.
     
     //To set it's position on your scene:
-    mySprite.position = CGPointMake(240,180);   // that position would be the center of an iPhone/iPod screen
+    //mySprite.position = CGPointMake(240,180);   // that position would be the center of an iPhone/iPod screen
+    [self setGra:mySprite];
+  }
+  return self;
+}
+
+- (id)initWithProperties:(NSDictionary *)p {
+  self = [super initWithProperties:p];
+  if (self) {
+    CCSprite *mySprite = [CCSprite spriteWithFile:[p objectForKey:@"sprite"]];
     [self setGra:mySprite];
   }
   return self;
@@ -34,6 +43,13 @@
   fixture->density = 1.0f;
   fixture->friction = 0.8f;
   fixture->restitution = 0.5f;
+}
+
+-(void) setupBodyDef:(b2BodyDef *) bodyDef {
+//  bodyDef->linearDamping = 10.0f;
+//  bodyDef->angularDamping = 10.0f;
+  [super setupBodyDef:bodyDef];
+//  bodyDef->linearVelocity = b2Vec2(10, 1000);
 }
 
 @end

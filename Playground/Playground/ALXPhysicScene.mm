@@ -57,6 +57,7 @@
 
 -(void) addObject:(ALXObject *) o {
   b2BodyDef bodyDef;
+  [o setupBodyDef:&bodyDef];
   bodyDef.type = [o bodyType];
   const CGPoint p = [o position];
   bodyDef.position.Set(p.x, p.y);
@@ -67,6 +68,9 @@
   if (node) {
     [self addChild:[o gra]];
   }
+  
+  // Reset properties
+  [o setProperties:0];
   [_objects addObject:o];
 }
 
@@ -82,10 +86,13 @@
     if (b->GetUserData() != NULL) {
       ALXObject * o = (ALXObject *)b->GetUserData();
       
-      if (CCNode *ballData = [o gra]) {
-        ballData.position = ccp(b->GetPosition().x * PTM_RATIO,
+      if (CCNode *gra = [o gra]) {
+        gra.position = ccp(b->GetPosition().x * PTM_RATIO,
                                 b->GetPosition().y * PTM_RATIO);
-        ballData.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+        gra.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+/*        if ([o isKindOfClass:NSClassFromString(@"TestObject")]) {
+          NSLog(@"Obj %p position %@", gra, NSStringFromCGPoint([gra position]));
+        }*/
       }
     }
   }

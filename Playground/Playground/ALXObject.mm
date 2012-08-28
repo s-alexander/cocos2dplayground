@@ -15,6 +15,16 @@
 @synthesize gra;
 @dynamic body;
 @dynamic position;
+@synthesize properties;
+
+-(id) initWithProperties:(NSDictionary *) p {
+  self = [super init];
+  if (self) {
+    [self setProperties:p];
+  }
+  return self;
+  
+}
 
 -(id) init {
   self = [super init];
@@ -46,21 +56,34 @@
 -(void) setupFixture:(b2FixtureDef *) fixture {
 }
 
+-(void) setupBodyDef:(b2BodyDef *) bodyDef {
+  if ([self properties]) {
+    const float x = [[properties objectForKey:@"x"] floatValue];
+    const float y = [[properties objectForKey:@"y"] floatValue];
+    [self setPosition:CGPointMake(x, y)];
+  }
+}
+
 
 -(void) setBody:(b2Body *)body {
   if (_body && _body->GetWorld()) {
     _body->GetWorld()->DestroyBody(_body);
   }
   _body = body;
-  b2FixtureDef fixDef;
-  [self setupFixture:&fixDef];
-  fixDef.shape = [self shape];
-  _body->CreateFixture(&fixDef);
-  _body->SetUserData(self);
+  if (_body) {
+    b2FixtureDef fixDef;
+    [self setupFixture:&fixDef];
+    fixDef.shape = [self shape];
+    _body->CreateFixture(&fixDef);
+    _body->SetUserData(self);
+  }
 }
 
 
 -(void) dealloc {
+  [self setBody:0];
+  [self setProperties:0];
+  [self setGra:0];
   [super dealloc];
 }
 

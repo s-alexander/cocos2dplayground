@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CCScene.h"
+#import "ALXObjectController.h"
 #import "Box2D/Box2D.h"
 
 class b2Body;
@@ -23,6 +24,7 @@ class b2Shape;
 @property (nonatomic, assign) CGPoint position;
 @property (nonatomic, retain) CCNode * gra;
 @property (nonatomic, retain) NSDictionary * properties;
+@property (nonatomic, assign) id<ALXObjectController> controller;
 
 -(b2BodyType) bodyType;
 -(void) setupFixture:(b2FixtureDef *) fixture;

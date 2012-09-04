@@ -90,6 +90,7 @@
         gra.position = ccp(b->GetPosition().x * PTM_RATIO,
                                 b->GetPosition().y * PTM_RATIO);
         gra.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+        [[o controller] step];
 /*        if ([o isKindOfClass:NSClassFromString(@"TestObject")]) {
           NSLog(@"Obj %p position %@", gra, NSStringFromCGPoint([gra position]));
         }*/

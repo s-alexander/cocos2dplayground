@@ -33,7 +33,7 @@
   "objects": [
   {
     "class": "TestObject",
-              "properties": {"x":5, "y":5, "sprite":"sprite_sample.png"}
+              "properties": {"x":5, "y":5, "sprite":"sprite_sample.png", "controller": "ALXGamePadController"}
   }
   ]
 }

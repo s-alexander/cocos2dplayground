@@ -175,6 +175,9 @@
 		FA51A61C15BD8697000E6E9C /* DataManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA51A61A15BD8697000E6E9C /* DataManager.mm */; };
 		FA51A61F15BD86E1000E6E9C /* NSArray+FirstObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51A61E15BD86E0000E6E9C /* NSArray+FirstObject.m */; };
 		FA51A62115BD872B000E6E9C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA51A62015BD872B000E6E9C /* CoreData.framework */; };
+		FA63E7BA15F64C910051CDD1 /* ALXGamePadController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA63E7B915F64C910051CDD1 /* ALXGamePadController.mm */; };
+		FA63E7BD15F64F5E0051CDD1 /* gamepad_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FA63E7BC15F64F5E0051CDD1 /* gamepad_background.png */; };
+		FA63E7BF15F650CD0051CDD1 /* gamepad_pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = FA63E7BE15F650CD0051CDD1 /* gamepad_pointer.png */; };
 		FA9D329415D548740037543F /* ALXPhysicScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA9D329315D548740037543F /* ALXPhysicScene.mm */; };
 		FADA43BB15E4DD9A0074E844 /* TestObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = FADA43BA15E4DD9A0074E844 /* TestObject.mm */; };
 		FADA43C015E4E4B10074E844 /* ALXDynamicObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = FADA43BF15E4E4B10074E844 /* ALXDynamicObject.mm */; };
@@ -530,6 +533,11 @@
 		FA51A61D15BD86E0000E6E9C /* NSArray+FirstObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FirstObject.h"; sourceTree = "<group>"; };
 		FA51A61E15BD86E0000E6E9C /* NSArray+FirstObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FirstObject.m"; sourceTree = "<group>"; };
 		FA51A62015BD872B000E6E9C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA63E7B815F64C910051CDD1 /* ALXGamePadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXGamePadController.h; sourceTree = "<group>"; };
+		FA63E7B915F64C910051CDD1 /* ALXGamePadController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXGamePadController.mm; sourceTree = "<group>"; };
+		FA63E7BB15F64CA70051CDD1 /* ALXObjectController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALXObjectController.h; sourceTree = "<group>"; };
+		FA63E7BC15F64F5E0051CDD1 /* gamepad_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gamepad_background.png; path = Playground/Resources/gamepad_background.png; sourceTree = "<group>"; };
+		FA63E7BE15F650CD0051CDD1 /* gamepad_pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gamepad_pointer.png; path = Playground/Resources/gamepad_pointer.png; sourceTree = "<group>"; };
 		FA9D329215D548740037543F /* ALXPhysicScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXPhysicScene.h; sourceTree = "<group>"; };
 		FA9D329315D548740037543F /* ALXPhysicScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ALXPhysicScene.mm; sourceTree = "<group>"; };
 		FADA43B915E4DD9A0074E844 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
@@ -788,6 +796,7 @@
 				FA51A61615BD865B000E6E9C /* CommonData.xcdatamodeld */,
 				FA9D329215D548740037543F /* ALXPhysicScene.h */,
 				FA9D329315D548740037543F /* ALXPhysicScene.mm */,
+				FA63E7B615F64C710051CDD1 /* Controllers */,
 				FADA43BD15E4E4950074E844 /* Objects */,
 				FADA43CA15E50AA70074E844 /* PolygoneNode.h */,
 				FADA43CB15E50AA80074E844 /* PolygoneNode.mm */,
@@ -1128,6 +1137,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FA63E7B615F64C710051CDD1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA63E7B815F64C910051CDD1 /* ALXGamePadController.h */,
+				FA63E7B915F64C910051CDD1 /* ALXGamePadController.mm */,
+				FA63E7BB15F64CA70051CDD1 /* ALXObjectController.h */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		FA9D329615D54B5A0037543F /* External */ = {
 			isa = PBXGroup;
 			children = (
@@ -1167,6 +1186,8 @@
 		FAFC500615E6362D0043DC5A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FA63E7BE15F650CD0051CDD1 /* gamepad_pointer.png */,
+				FA63E7BC15F64F5E0051CDD1 /* gamepad_background.png */,
 				FAE9B88A15CA69D5001C0B5A /* sprite_sample.png */,
 			);
 			name = Images;
@@ -1242,6 +1263,8 @@
 				FA51A4BD15BD5F61000E6E9C /* iTunesArtwork in Resources */,
 				FAE9B88B15CA69D5001C0B5A /* sprite_sample.png in Resources */,
 				FAFC500915E6380D0043DC5A /* level1.json in Resources */,
+				FA63E7BD15F64F5E0051CDD1 /* gamepad_background.png in Resources */,
+				FA63E7BF15F650CD0051CDD1 /* gamepad_pointer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1411,6 +1434,7 @@
 				FADA43C915E4FC5B0074E844 /* LevelGround.mm in Sources */,
 				FADA43CC15E50AA90074E844 /* PolygoneNode.mm in Sources */,
 				FAFC500C15E638D70043DC5A /* ALXLevelScene.mm in Sources */,
+				FA63E7BA15F64C910051CDD1 /* ALXGamePadController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

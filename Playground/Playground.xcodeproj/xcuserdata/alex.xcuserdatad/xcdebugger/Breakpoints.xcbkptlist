@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Playground/ALXGameScene.mm"
-         timestampString = "367409759.842737"
+         timestampString = "368467191.11596"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "34"
-         endingLineNumber = "34"
+         startingLineNumber = "69"
+         endingLineNumber = "69"
          landmarkName = "@implementation ALXGameScene"
          landmarkType = "3">
       </FileBreakpoint>
@@ -60,22 +60,22 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Playground/ALXObject.h"
-         timestampString = "367323350.454482"
+         timestampString = "368469212.426332"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "15"
-         endingLineNumber = "15">
+         startingLineNumber = "16"
+         endingLineNumber = "16">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Playground/TestObject.mm"
-         timestampString = "367862993.539112"
+         timestampString = "368469212.426332"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "37"
-         endingLineNumber = "37"
+         startingLineNumber = "45"
+         endingLineNumber = "45"
          landmarkName = "-shape"
          landmarkType = "5">
       </FileBreakpoint>
@@ -84,11 +84,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Playground/TestObject.mm"
-         timestampString = "367862993.539112"
+         timestampString = "368469212.426332"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "43"
-         endingLineNumber = "43"
+         startingLineNumber = "51"
+         endingLineNumber = "51"
          landmarkName = "-setupFixture:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -123,11 +123,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Playground/ALXObject.mm"
-         timestampString = "367860867.14498"
+         timestampString = "368469212.426332"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "78"
-         endingLineNumber = "78"
+         startingLineNumber = "79"
+         endingLineNumber = "79"
          landmarkName = "-setBody:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -201,11 +201,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Playground/ALXObject.mm"
-         timestampString = "367860862.374974"
+         timestampString = "368469212.426332"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "63"
-         endingLineNumber = "63"
+         startingLineNumber = "64"
+         endingLineNumber = "64"
          landmarkName = "-setupBodyDef:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -227,11 +227,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Playground/ALXObject.mm"
-         timestampString = "367861467.702196"
+         timestampString = "368469212.426332"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "41"
-         endingLineNumber = "41"
+         startingLineNumber = "42"
+         endingLineNumber = "42"
          landmarkName = "-setPosition:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -240,11 +240,50 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Playground/TestObject.mm"
-         timestampString = "367862993.539112"
+         timestampString = "368468053.022576"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "30"
-         endingLineNumber = "30"
+         startingLineNumber = "31"
+         endingLineNumber = "31"
+         landmarkName = "-initWithProperties:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Playground/ALXGameScene.mm"
+         timestampString = "368467191.11596"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
+         landmarkName = "-ccTouchBegan:withEvent:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Playground/ALXGameScene.mm"
+         timestampString = "368467341.165508"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
+         landmarkName = "-ccTouchMoved:withEvent:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Playground/TestObject.mm"
+         timestampString = "368468128.388715"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "34"
+         endingLineNumber = "34"
          landmarkName = "-initWithProperties:"
          landmarkType = "5">
       </FileBreakpoint>

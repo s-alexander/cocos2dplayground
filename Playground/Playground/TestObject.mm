@@ -7,6 +7,7 @@
 //
 
 #import "TestObject.h"
+#import "ALXObjectController.h"
 #import "cocos2d.h"
 #import <Box2D/Box2D.h>
 
@@ -29,6 +30,13 @@
   if (self) {
     CCSprite *mySprite = [CCSprite spriteWithFile:[p objectForKey:@"sprite"]];
     [self setGra:mySprite];
+    
+    Class<ALXObjectController> controllerClass = NSClassFromString([p objectForKey:@"controller"]);
+    if (controllerClass) {
+      id<ALXObjectController> controller = [controllerClass getController];
+      [controller setPuppet:self];
+      [self setController:controller];
+    }
   }
   return self;
 }

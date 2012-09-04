@@ -7,10 +7,14 @@
 //
 
 #import "ALXPhysicScene.h"
+#import "cocos2d.h"
 
-@interface ALXGameScene : ALXPhysicScene {
+@interface ALXGameScene : ALXPhysicScene <CCTargetedTouchDelegate> {
   
 }
+
+@property (nonatomic, retain) CCNode* gamepadPointer;
+
 
 
 @end

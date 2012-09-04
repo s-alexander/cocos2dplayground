@@ -16,6 +16,7 @@
 @dynamic body;
 @dynamic position;
 @synthesize properties;
+@synthesize controller;
 
 -(id) initWithProperties:(NSDictionary *) p {
   self = [super init];
@@ -84,6 +85,7 @@
   [self setBody:0];
   [self setProperties:0];
   [self setGra:0];
+  [[self controller] setPuppet:0];
   [super dealloc];
 }
 
